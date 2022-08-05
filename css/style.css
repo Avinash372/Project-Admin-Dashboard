@@ -4,7 +4,7 @@
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 3fr 1fr;
   background-color: #342c2c;
 }
 /* ========================= */
@@ -31,6 +31,7 @@ a {
 .activity,
 .admin {
   margin-left: 5%;
+  margin-top: 3%;
   margin-bottom: 40px;
 }
 p {
@@ -49,7 +50,9 @@ span {
   grid-column: 2/4;
   box-shadow: 0 2px 5px rgb(0, 0, 0);
   height: 280px;
-  background-color: #fff;
+  background-image: url("/img/header-background.webp");
+  background-repeat: repeat-x;
+  color: #fff;
 }
 .header-top,
 .header-bottom {
@@ -71,10 +74,6 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-label > a > span,
-.other > p > span {
-  color: grey;
 }
 label > a > span:hover,
 .other > p > span:hover {
@@ -150,7 +149,7 @@ input.search:focus {
 /* ========================= */
 div.heading-main {
   display: flex;
-  grid-column: 2/4;
+  grid-column: 2/3;
   height: 100px;
   justify-content: flex-start;
   align-items: center;
@@ -165,13 +164,14 @@ div.heading-main,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
-  grid-column: 2/4;
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 .card-container {
   display: grid;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 1px 2px 5px rgb(0, 0, 0);
 }
 .card {
   display: grid;
@@ -195,6 +195,7 @@ div.heading-main,
   font-weight: 300;
   color: #636363;
 }
+
 .wrapper > h4 {
   font-size: 20px;
   padding-bottom: 3px;
@@ -206,4 +207,19 @@ div.heading-main,
 .option-icon > span {
   color: #333333;
   font-size: 20px;
+  cursor: pointer;
+}
+/* ========================= */
+/*======SIDE-CONTENTS======*/
+/* ========================= */
+.heading-side {
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.side-contents {
+  grid-column: 3/4;
 }
