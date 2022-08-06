@@ -50,7 +50,7 @@ span {
   grid-column: 2/4;
   box-shadow: 0 2px 5px rgb(0, 0, 0);
   height: 280px;
-  background-image: url("/img/header-background.webp");
+  background-image: url("img/header-background.webp");
   background-repeat: repeat-x;
   color: #fff;
 }
