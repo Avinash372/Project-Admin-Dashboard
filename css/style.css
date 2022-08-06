@@ -212,7 +212,8 @@ div.heading-main,
 /* ========================= */
 /*======SIDE-CONTENTS======*/
 /* ========================= */
-.heading-side {
+.heading-side,
+.trending-side {
   display: flex;
   height: 100px;
   justify-content: flex-start;
@@ -221,5 +222,67 @@ div.heading-main,
   color: #fff;
 }
 .side-contents {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
   grid-column: 3/4;
+  grid-row: 3/4;
+  margin-right: 5%;
+  height: fit-content;
+}
+.side-card-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.elements {
+  padding: 10px;
+}
+.elements > h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.elements > .para {
+  font-size: 16px;
+  font-weight: 300;
+  color: #636363;
+}
+.elements::after {
+  content: ".";
+  font-size: 0px;
+  border: 1px solid #6363633d;
+  display: block;
+}
+.elements:last-child::after {
+  display: none;
+}
+
+.trending-side {
+  grid-column: 3/4;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  /* max-width: fit-content; */
+}
+.profiles:last-child {
+  padding-bottom: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.profile-info-side > h4 {
+  font-weight: 500;
+}
+.profile-info-side > p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #636363;
 }
